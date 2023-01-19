@@ -9,6 +9,7 @@
     --fiveColor: #1a4aac;
     --text-color-liste-pro: #535556;
     --text-color-background: #F4F6F8;
+    --white-color: #fff;
 }
 
 /* HOME PAGE */
@@ -40,13 +41,46 @@ header {
 }
 
 /* LIST PROFESSIONAL PAGE */
-.liste-pro-desc {
+.liste-pro {
     background-color: var(--text-color-background);
     color: var(--text-color-liste-pro);
+    padding: 0 104.5px 0 104.5px;
+}
+
+.liste-pro-desc {
+    height: 300px;
 }
 
 .liste-pro-desc h1 {
     font-size: 25px;
+}
+
+.liste-pro-categories-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5;
+}
+
+.liste-pro-left-side h3 {
+    font-size: 20px;
+}
+
+.liste-pro-left-side span {
+    color: var(--primaryColor);
+    background-color: var(--white-color);
+    border-radius: 50px;
+    padding: 5px;
+    display: inline-block;
+    box-shadow: 1px 1px 5px var(--text-color-liste-pro);
+    margin-right: 10px;
+}
+
+.liste-pro-categorie-item{
+    margin-bottom: 10px;
+}
+
+@media screen  {
+    
 }
 
 /* DETAIL PROFESSIONAL PAGE */

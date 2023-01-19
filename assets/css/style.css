@@ -42,23 +42,44 @@ header {
 
 /* LIST PROFESSIONAL PAGE */
 .liste-pro {
-    background-color: var(--text-color-background);
     color: var(--text-color-liste-pro);
-    padding: 0 104.5px 0 104.5px;
 }
 
 .liste-pro-desc {
-    height: 300px;
+    color: var(--white-color);
+    padding: 0 0px 0 104.5px;
+    height: 350px;
+    background-image: url("https://images.pexels.com/photos/2422574/pexels-photo-2422574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.liste-pro-desc-content {
+    margin: auto;
 }
 
 .liste-pro-desc h1 {
-    font-size: 25px;
+    font-size: 30px;
+}
+
+.liste-pro-desc p {
+    font-size: 15px;
 }
 
 .liste-pro-categories-list {
     display: flex;
     flex-direction: column;
     gap: 5;
+}
+
+.liste-pro-categories-list a {
+    text-decoration: none;
+}
+
+.liste-pro-left-side {
+    background-color: var(--text-color-background);
+    padding: 0 0 0 104.5px;
 }
 
 .liste-pro-left-side h3 {
@@ -75,12 +96,48 @@ header {
     margin-right: 10px;
 }
 
-.liste-pro-categorie-item{
+.liste-pro-categorie-item {
     margin-bottom: 10px;
 }
 
-@media screen  {
-    
+.liste-pro-right-side {
+    background-color: var(--text-color-background);
+    padding: 0 104.5px 0 0;
+}
+
+.liste-pro-card-element img {
+    height: 80px;
+    width: 80px;
+}
+
+.liste-pro-card-element .card-header, .card-footer{
+    background-color: var(--white-color);
+}
+
+.icone-statut{
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+.liste-pro-card-element .card-text{
+    text-align: justify;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .liste-pro-categoriesList {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .liste-pro-left-side {
+        padding: 0;
+    }
+
+    .liste-pro-right-side {
+        padding: 10px;
+    }
 }
 
 /* DETAIL PROFESSIONAL PAGE */

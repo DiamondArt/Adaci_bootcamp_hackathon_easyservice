@@ -40,7 +40,9 @@ var dataBD = {
             "tel1": "+225 0785964220",
             "tel2": "+225 0145239874",
             "annee_experience": 3,
-            "notation": 4.5
+            "notation": 4.5,
+            "Fonction": "Expert menuisier",
+            "statut":"Disponible"
         },
         {
             "nom": "Mangou",
@@ -50,7 +52,9 @@ var dataBD = {
             "tel1": "+225 5486952314",
             "tel2": "+225 4258796354",
             "annee_experience": 2,
-            "notation": 3
+            "notation": 3,
+            "Fonction": "Expert menuisier",
+            "statut":"Disponible"
         },
         {
             "nom": "Agou",
@@ -60,7 +64,9 @@ var dataBD = {
             "tel1": "+225 8596741236",
             "tel2": "+225 4525698732",
             "annee_experience": 2,
-            "notation": 3.5
+            "notation": 3.5,
+            "Fonction": "Expert menuisier",
+            "statut":"Disponible"
         },
         {
             "nom": "Kata",
@@ -70,7 +76,9 @@ var dataBD = {
             "tel1": "+225 2352416985",
             "tel2": "+225 2147856932",
             "annee_experience": 6,
-            "notation": 3
+            "notation": 3,
+            "Fonction": "Expert menuisier",
+            "statut":"Disponible"
         },
         {
             "nom": "Sagou",
@@ -80,7 +88,9 @@ var dataBD = {
             "tel1": "+225 0785964220",
             "tel2": "+225 0145239874",
             "annee_experience": 6,
-            "notation": 1
+            "notation": 1,
+            "Fonction": "Expert menuisier",
+            "statut":"Disponible"
         },
         {
             "nom": "Akossi",
@@ -90,7 +100,9 @@ var dataBD = {
             "tel1": "+225 0785964220",
             "tel2": "+225 0145239874",
             "annee_experience": 7,
-            "notation": 3.5
+            "notation": 3.5,
+            "Fonction": "Expert menuisier",
+            "statut":"Non Disponible"
         },
         {
             "nom": "Danho",
@@ -100,7 +112,9 @@ var dataBD = {
             "tel1": "+225 0785964220",
             "tel2": "+225 0145239874",
             "annee_experience": 7,
-            "notation": 3.5
+            "notation": 3.5,
+            "Fonction": "Expert menuisier",
+            "statut":"Disponible"
         },
         {
             "nom": "Boly",
@@ -110,7 +124,9 @@ var dataBD = {
             "tel1": "+225 0785964220",
             "tel2": "+225 0145239874",
             "annee_experience": 5,
-            "notation": 4
+            "notation": 4,
+            "Fonction": "Expert menuisier",
+            "statut":"Disponible"
         },
         {
             "nom": "Gnaly",
@@ -120,7 +136,9 @@ var dataBD = {
             "tel1": "+225 0785964220",
             "tel2": "+225 0145239874",
             "annee_experience": 3,
-            "notation": 4.5
+            "notation": 4.5,
+            "Fonction": "Expert menuisier",
+            "statut":"Non Disponible"
         },
         {
             "nom": "Kacou",
@@ -130,7 +148,9 @@ var dataBD = {
             "tel1": "+225 0785964220",
             "tel2": "+225 0145239874",
             "annee_experience": 3,
-            "notation": 4.5
+            "notation": 4.5,
+            "Fonction": "Expert menuisier",
+            "statut":"Disponible"
         },
         {
             "nom": "Kacou",
@@ -140,7 +160,9 @@ var dataBD = {
             "tel1": "+225 0785964220",
             "tel2": "+225 0145239874",
             "annee_experience": 3,
-            "notation": 4.5
+            "notation": 4.5,
+            "Fonction": "Expert menuisier",
+            "statut":"Disponible"
         },
         {
             "nom": "Kacou",
@@ -150,7 +172,9 @@ var dataBD = {
             "tel1": "+225 0785964220",
             "tel2": "+225 0145239874",
             "annee_experience": 3,
-            "notation": 4.5
+            "notation": 4.5,
+            "Fonction": "Expert menuisier",
+            "statut":"Disponible"
         },
         {
             "nom": "Kacou",
@@ -160,7 +184,8 @@ var dataBD = {
             "tel1": "+225 0785964220",
             "tel2": "+225 0145239874",
             "annee_experience": 3,
-            "notation": 4.5
+            "notation": 4.5,
+            "statut":"Disponible"
         },
         {
             "nom": "Kacou",
@@ -170,7 +195,9 @@ var dataBD = {
             "tel1": "+225 0785964220",
             "tel2": "+225 0145239874",
             "annee_experience": 3,
-            "notation": 4.5
+            "notation": 4.5,
+            "Fonction": "Expert menuisier",
+            "statut":"Disponible"
         },
         {
             "nom": "Kacou",
@@ -180,7 +207,9 @@ var dataBD = {
             "tel1": "+225 0785964220",
             "tel2": "+225 0145239874",
             "annee_experience": 3,
-            "notation": 4.5
+            "notation": 4.5,
+            "Fonction": "Expert menuisier",
+            "statut":"Disponible"
         },
         {
             "nom": "Kacou",
@@ -190,7 +219,9 @@ var dataBD = {
             "tel1": "+225 0785964220",
             "tel2": "+225 0145239874",
             "annee_experience": 3,
-            "notation": 4.5
+            "notation": 4.5,
+            "Fonction": "Expert menuisier",
+            "statut":"Non Disponible"
         },
         {
             "nom": "Kacou",
@@ -200,7 +231,9 @@ var dataBD = {
             "tel1": "+225 0785964220",
             "tel2": "+225 0145239874",
             "annee_experience": 3,
-            "notation": 4.5
+            "notation": 4.5,
+            "Fonction": "Expert menuisier",
+            "statut":"Non Disponible"
         },
         {
             "nom": "Kacou",
@@ -210,7 +243,9 @@ var dataBD = {
             "tel1": "+225 0785964220",
             "tel2": "+225 0145239874",
             "annee_experience": 3,
-            "notation": 4.5
+            "notation": 4.5,
+            "Fonction": "Expert menuisier",
+            "statut":"Non Disponible"
         },
         {
             "nom": "Kacou",
@@ -220,7 +255,9 @@ var dataBD = {
             "tel1": "+225 0785964220",
             "tel2": "+225 0145239874",
             "annee_experience": 3,
-            "notation": 4.5
+            "notation": 4.5,
+            "Fonction": "Expert menuisier",
+            "statut":"Disponible"
         },
         {
             "nom": "Kacou",
@@ -230,7 +267,9 @@ var dataBD = {
             "tel1": "+225 0785964220",
             "tel2": "+225 0145239874",
             "annee_experience": 3,
-            "notation": 4.5
+            "notation": 4.5,
+            "Fonction": "Expert menuisier",
+            "statut":"Disponible"
         }
     ]
 }

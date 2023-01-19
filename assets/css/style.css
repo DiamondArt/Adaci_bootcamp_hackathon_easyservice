@@ -227,9 +227,7 @@ i.material-symbols-outlined {
 }
 
 /* DETAIL PROFESSIONAL PAGE */
-.details-pro {
-    
-}
+.details-pro {}
 
 .details-pro-desc {
     color: var(--white-color);
@@ -238,6 +236,19 @@ i.material-symbols-outlined {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+.description-prestataire {
+    background-color: var(--white-color);
+    padding: 10px;
+    border: none;
+    position: absolute;
+    top: 235px;
+    width: 60%;
+}
+
+.star-checked {
+    color: orange;
 }
 
 /* SIGNIN PAGE */

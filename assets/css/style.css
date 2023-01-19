@@ -14,7 +14,7 @@
 /* HOME PAGE */
 
 header{
-  border-top: 2px solid var(--primaryColor);
+  border-top: 3px solid var(--primaryColor);
 }
 .secondaryBtn{
     border-radius: 100px;

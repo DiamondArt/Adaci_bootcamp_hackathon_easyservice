@@ -36,19 +36,19 @@ for (const key in categories) {
 
 
 // PROFESSIONAL PAGE LIST
-// let listeProCategoriesList = document.querySelector(".liste-pro-categoriesList");
+let listeProCategoriesList = document.querySelector(".liste-pro-categoriesList");
 
-// /** Ajout des catégories */
-// for (const key in categories) {
-//     let div = document.createElement("div");
-//     div.classList.add("liste-pro-categorie-item");
-//     let span = document.createElement("span");
-//     span.classList.add("material-symbols-outlined");
-//     span.innerHTML = iconsCategories[key];
-//     let textNode = document.createTextNode(categories[key].libelle);
+/** Ajout des catégories */
+for (const key in categories) {
+    let div = document.createElement("div");
+    div.classList.add("liste-pro-categorie-item");
+    let span = document.createElement("span");
+    span.classList.add("material-symbols-outlined");
+    span.innerHTML = iconsCategories[key];
+    let textNode = document.createTextNode(categories[key].libelle);
 
-//     div.appendChild(span);
-//     div.appendChild(textNode);
-//     listeProCategoriesList.appendChild(div);
-// }
+    div.appendChild(span);
+    div.appendChild(textNode);
+    listeProCategoriesList.appendChild(div);
+}
 // PROFESSIONAL DETAIL

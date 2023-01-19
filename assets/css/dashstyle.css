@@ -120,3 +120,55 @@
     font-size: 20px;
     color: var(--fiveColor)
   }
+
+  .demande{
+    background-color: var(--primaryColor);
+  }
+
+  .demande-titre{
+    color: var(--text-color-liste-pro);
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: var(--text-color-background);
+  }
+
+  .demande-nombre{
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    color: var(--text-color-background);
+  }
+
+  .info-demande{
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--text-color-background);
+    margin-top: 40px;
+    font-size:medium ;
+   font-weight: bold;
+  }
+
+  .prestation-titre{
+    color: var(--text-color-liste-pro);
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: var(--secondaryColor);
+  }
+
+  .prestation-nombre{
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    color: var(--fiveColor);
+  }
+
+  .prestation-historique{
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--fourColor);
+    margin-top: 40px;
+    font-size:medium ;
+   font-weight: bold;
+  }

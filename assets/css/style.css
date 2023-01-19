@@ -1,6 +1,8 @@
 /* ******************************
 *               EASYSERVICE
 **********************************/
+
+/* main color */
 :root {
     --primaryColor: #246aeb;
     --secondaryColor: #01ce68;
@@ -9,33 +11,41 @@
     --fiveColor: #1a4aac;
     --text-color-liste-pro: #535556;
     --text-color-background: #F4F6F8;
+    --white-color: #fff;
+    --green-color: green;
+    --red-color: red;
 }
 
 
 /* HOME PAGE */
-body{
+body {
     background: #f4f6f8;
 }
 .bg-primaire{
     background: var(--fiveColor);
 }
-.bg-second{
+
+.bg-second {
     background: var(--secondaryColor);
 }
-.bg-third{
+
+.bg-third {
     background: var(--thirdColor);
 }
-.bg-four{
+
+.bg-four {
     background: var(--fourColor);
 }
-.bg-five{
+
+.bg-five {
     background: var(--fiveColor);
 }
 
-header{
-  border-top: 3px solid var(--primaryColor);
+header {
+    border-top: 3px solid var(--primaryColor);
 }
-.secondaryBtn{
+
+.secondaryBtn {
     border-radius: 100px;
     color: white;
     padding: 12px;
@@ -59,28 +69,34 @@ header{
     font-weight: 600;
     font-size: 18px;
 }
-#about{
+
+
+#about {
     background: white;
     padding: 10px;
 }
-#about .icon img{
+
+#about .icon img {
     width: 85px;
 }
+
 #about .icon .title {
     font-size: 23px;
     font-weight: 500;
 }
-#about .desc{
+
+#about .desc {
     color: gray;
 }
-#categorie .card-body{
+
+#categorie .card-body {
     background: white;
-    box-shadow: -1px -3px 5px -1px rgba(0,0,0,0.75);
--webkit-box-shadow: -1px -3px 5px -1px rgba(0,0,0,0.75);
--moz-box-shadow: -1px -3px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px -3px 5px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px -3px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px -3px 5px -1px rgba(0, 0, 0, 0.75);
 }
 
-i.material-symbols-outlined{
+i.material-symbols-outlined {
     color: var(--primaryColor);
     background-color: white;
     border-radius: 50px;
@@ -89,26 +105,31 @@ i.material-symbols-outlined{
     box-shadow: 1px 1px 5px rgb(103, 102, 102);
     margin-right: 10px;
 }
-#sidebar-ul a{
+
+#sidebar-ul a {
     color: black;
     text-decoration: none;
 }
-#sidebarContent .card{
+
+#sidebarContent .card {
     box-shadow: -1px 0px 15px 5px rgba(222, 222, 222, 0.75);
     -webkit-box-shadow: -1px 0px 15px 5px rgba(222, 222, 222, 0.75);
     -moz-box-shadow: -1px 0px 15px 5px rgba(222, 222, 222, 0.75);
     border: none;
 }
-#sidebarContent .avatar{
+
+#sidebarContent .avatar {
     height: 45px;
     width: 45px;
     border-radius: 50px;
 }
-#sidebarContent .card-title{
+
+#sidebarContent .card-title {
     color: var(--primaryColor);
 }
-#sidebarContent .postedBy a{
-text-decoration: none;
+
+#sidebarContent .postedBy a {
+    text-decoration: none;
 }
 
 #howToWork .col-md-4{
@@ -183,23 +204,44 @@ header {
 }
 
 .liste-pro {
-    background-color: var(--text-color-background);
     color: var(--text-color-liste-pro);
-    padding: 0 104.5px 0 104.5px;
 }
 
 .liste-pro-desc {
-    height: 300px;
+    color: var(--white-color);
+    padding: 0 0px 0 104.5px;
+    height: 350px;
+    background-image: url("https://images.pexels.com/photos/2422574/pexels-photo-2422574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.liste-pro-desc-content {
+    margin: auto;
 }
 
 .liste-pro-desc h1 {
-    font-size: 25px;
+    font-size: 30px;
+}
+
+.liste-pro-desc p {
+    font-size: 20px;
 }
 
 .liste-pro-categories-list {
     display: flex;
     flex-direction: column;
     gap: 5;
+}
+
+.liste-pro-categories-list a {
+    text-decoration: none;
+}
+
+.liste-pro-left-side {
+    background-color: var(--text-color-background);
+    padding: 0 0 0 104.5px;
 }
 
 .liste-pro-left-side h3 {
@@ -216,14 +258,71 @@ header {
     margin-right: 10px;
 }
 
-.liste-pro-categorie-item{
+.liste-pro-categorie-item {
     margin-bottom: 10px;
 }
 
-@media screen  {
-    
+.liste-pro-right-side {
+    background-color: var(--text-color-background);
+    padding: 0 104.5px 0 0;
+}
+
+.liste-pro-card-element img {
+    height: 80px;
+    width: 80px;
+}
+
+.liste-pro-card-element .card-header,
+.card-footer {
+    background-color: var(--white-color);
+}
+
+.icone-statut {
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+.liste-pro-card-element .card-text {
+    text-align: justify;
+}
+
+.icone-statut-disponible {
+    color: var(--green-color);
+}
+
+.icone-statut-non-disponible {
+    color: var(--red-color);
+}
+
+.professionnelsList a {
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+
+    .liste-pro-left-side {
+        padding: 0;
+    }
+
+    .liste-pro-right-side {
+        padding: 10px;
+    }
 }
 
 /* DETAIL PROFESSIONAL PAGE */
+.details-pro {
+    
+}
+
+.details-pro-desc {
+    color: var(--white-color);
+    height: 250px;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/876/437/102/blue-material-material-design-minimal-art-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 /* SIGNIN PAGE */
 /* SIGNUP PAGE */

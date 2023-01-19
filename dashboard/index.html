@@ -27,20 +27,14 @@
           <div class="position-sticky pt-3 sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link active" aria-current="page" href="index.html">
                   <span data-feather="home" class="align-text-bottom"></span>
                  Tableau de Bord
                 </a>
               </li>
+             
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="file" class="align-text-bottom"></span>
-                  Notification
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="profil.html">
                   <span data-feather="shopping-cart" class="align-text-bottom"></span>
                   Profil
                 </a>
@@ -48,139 +42,32 @@
 
               <li class="nav-item">
                   <span data-feather="shopping-cart" class="align-text-bottom"></span>
-                  <a class="nav-link px-3 deconnexion" href="#">Se Deconnecter</a>
+                  <a class="nav-link px-3 deconnexion" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Se Deconnecter</a>
               </li>              
             </ul>
         </nav>
+      </div>
 
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Voulez-vous Deconnecter ?</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+           
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+              <button type="button" class="btn btn-primary">Oui</button>
+            </div>
+          </div>
+        </div>
       </div>
 
 <!-- Fin SideBar -->
 
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-           <!-- Debut Detail Information sur le Professionnel -->
-
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h3 class="titre-Information">Mes Informations Personnelle</h3>
-            <div class="btn-toolbar mb-2 mb-md-0">
-              <div class="btn-group me-2">
-                <button type="button" class="btn btn-sm btn btn-primary">Modifier</button>
-              </div>        
-            </div>
-          </div>
-        
-            <div class="row mb-2">        
-              <div class="col-md-2">
-                <div class="row g-0 overflow-hidden flex-md-row mb-4  h-md-150 position-relative">
-                  <img class="img-fluid card-img-top rounded-4" src="../assets/images/profil github.jpg"  alt="profil">
-              </div>
-              </div>
-
-              <div class="col-md-10">
-                <form class="row needs-validation g-0 border overflow-hidden flex-md-row mb-2 shadow-sm h-md-250 position-relative" novalidate>
-                  <div class="row g-3">
-                    <div class="col-sm-6">
-                      <label for="name" class="form-label">Nom et Prenoms</label>
-                      <input type="text" name="name" class="form-control" id="name" placeholder="" value="Magara Etchien N'gouan" required>
-                      <div class="invalid-feedback">
-                        veuillez renseigner s'il vous plait.
-                      </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                      <label for="email" class="form-label">Adresse Mail</label>
-                      <input type="text" name="email" class="form-control" id="email" placeholder="" value="magaretchien@gmail.com" required>
-                      <div class="invalid-feedback">
-                        veuillez renseigner s'il vous plait.
-                      </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                      <label for="contact1" class="form-label">Telephone 1</label>
-                      <input type="text" name="contact1" class="form-control" id="contact1" placeholder="" value="+225 07 48 64 73 54" required>
-                      <div class="invalid-feedback">
-                        veuillez renseigner s'il vous plait.
-                      </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                      <label for="contact2" class="form-label">Telephone 2</label>
-                      <input type="text" name="contact2" class="form-control" id="contact2" placeholder="" value=" +225 01 03 65 86 32" required>
-                      <div class="invalid-feedback">
-                        veuillez renseigner s'il vous plait.
-                      </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                      <label for="categorie" class="form-label">Domaine d'activite</label>
-                      <input type="text" name="categorie" class="form-control" id="categorie" placeholder="" value="Developpeur Informatique" required>
-                      <div class="invalid-feedback">
-                        veuillez renseigner s'il vous plait.
-                      </div>
-                    </div>
-        
-                    <div class="col-sm-6">
-                      <label for="experience" class="form-label">Experience Professionnelle</label>
-                      <input type="text" name="experience" class="form-control" id="experience" placeholder="" value="3 ans" required>
-                      <div class="invalid-feedback">
-                        veuillez renseigner s'il vous plait.
-                      </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                      <label for="casier-judiciaire" class="form-label">Casiers Judiciaire</label>
-                      <input type="text" name="casier-judiciaire" class="form-control" id="casier-judiciaire" placeholder="" value="Vide" required>
-                      <div class="invalid-feedback">
-                        veuillez renseigner s'il vous plait.
-                      </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                      <label for="piece" class="form-label">Piece d'identite</label>
-                      <input type="text" name="piece" class="form-control" id="piece" placeholder="" value="CNI" required>
-                      <div class="invalid-feedback">
-                        veuillez renseigner s'il vous plait.
-                      </div>
-                    </div>
-
-                    <div class="col-sm-12">
-                      <label for="situation-geographique" class="form-label">Situation Geographique</label>
-                      <input type="text" name="situation-geographique" class="form-control" id="situation-geographique" placeholder="" value="Abidjan, Cote d'Ivoire, GonzagueVille Terre Rouge" required>
-                      <div class="invalid-feedback">
-                        veuillez renseigner s'il vous plait.
-                      </div>
-                    </div>
-                    
-
-                    <div class="col-sm-6">
-                      <label for="login" class="form-label">Login</label>
-                      <input type="text" name="login" class="form-control" id="login" placeholder="" value="Magara1" required>
-                      <div class="invalid-feedback">
-                        veuillez renseigner s'il vous plait.
-                      </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                      <label for="password" class="form-label">Mot de passe</label>
-                      <input type="password" name="password" class="form-control" id="password" placeholder="" value="123456789" required>
-                      <div class="invalid-feedback">
-                        veuillez renseigner s'il vous plait.
-                      </div>
-                    </div>
-
-                    <div class="col-sm-12 mb-4">
-                      <label for="biographie" class="form-label">Biographie</label>
-                     <textarea name="biographie" id="biographie" class="form-control" cols="30" rows="3" value="Je suis une pesrsonne qui maitrise son boulot. je suis disponible pour faire travail"></textarea>
-                      <div class="invalid-feedback">
-                        veuillez renseigner s'il vous plait.
-                      </div>
-                    </div>
-                 </div>
-             </div> 
-          </div>
-        
-        <!-- Fin Detail Information sur le Professionnel -->
-
+  <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          
         <!-- Debut situation sur la plateforme -->
 
           <div class="row">

@@ -4,6 +4,8 @@
 
 /* START AUTHENTIFICATION */
 
+//SIGUP
+
  /* Recuperation de l'id de chaque champs */
 
   let userLastname = document.getElementById('userLastname');
@@ -11,6 +13,7 @@
   let userHome = document.getElementById('userHome');
   let userEmail = document.getElementById('userEmail');
   let userPhone = document.getElementById('userPhone');
+  let userPhoneWhat = document.getElementById('userPhoneWhat');
   let userPassword = document.getElementById('userPassword');
   let PasswordConfirm = document.getElementById('userPasswordConfirm');
 
@@ -89,6 +92,20 @@
         document.querySelector('.user-telephone').style.display="none"
     })
 
+     // input telephone WhatsApp
+
+     userPhoneWhat.addEventListener('blur', function (e) {
+        if (e.target.value.length == 0) {
+        document.querySelector('.user-telephone-what').style.display="block"
+        }
+        userPhoneWhat = e.target.value
+
+     })
+
+     userPhoneWhat.addEventListener('focus', function (e) {
+        document.querySelector('.user-telephone-what').style.display="none"
+    })
+
     // input mot de passe
 
     userPassword.addEventListener('blur', function (e) {
@@ -162,6 +179,7 @@
     })*/
 
 
+//LOGIN
 
 
 

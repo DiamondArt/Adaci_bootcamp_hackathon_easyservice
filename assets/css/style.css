@@ -29,6 +29,18 @@
       background-color: #eee;
     }
 
+    .error{
+      color: red;
+    }
+
+
+  .divForm{
+     width: 600px;
+     margin-left: 5%;
+
+
+    }
+
 /* END ACCUEIL AUTHENTIFICATION PAGE */
 
 /* SIGNUP PAGE */

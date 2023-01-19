@@ -41,26 +41,6 @@ function createSideBar() {
 }
 
 
-// PROFESSIONAL PAGE LIST
-// let listeProCategoriesList = document.querySelector(".liste-pro-categoriesList");
-
-// /** Ajout des catégories */
-// for (const key in categories) {
-//     let div = document.createElement("div");
-//     div.classList.add("liste-pro-categorie-item");
-//     let a = document.createElement("a");
-//     a.setAttribute("href", "#");
-//     let span = document.createElement("span");
-//     span.classList.add("material-symbols-outlined");
-//     span.innerHTML = iconsCategories[key];
-//     let textNode = document.createTextNode(categories[key].libelle);
-
-//     a.appendChild(span);
-//     a.appendChild(textNode);
-//     div.appendChild(a);
-//     listeProCategoriesList.appendChild(div);
-// }
-
 /** AJout des professionnels */
 
 //Lecture de la catégorie sélectionnée

@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+  <body>
+    <!-- header -->
+    <header class="bg-body-tertiary">
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand" href="#">EasyService</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">A propos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Connexion</a>
+                  </li>
+                </ul>
+                <div class="d-flex">
+                    <a  class="primaryBtn me-2">&nbsp;&nbsp;&nbsp;Nous rejoindre&nbsp;&nbsp;&nbsp;</a>
+                    <a  class="secondaryBtn">Demander un devis</a>
+                </div>
+              </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row mt-3">
+                <div class="col-md-2 bg-pro" >
+                </div>
+                <div class="col-md-8 mt-5">
+                    <h2 class="text-center"> Trouver facilement le meilleur prestataire !</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia optio unde velit recusandae, corrupti consequuntur deleniti nihil quod mollitia cupiditate sed quam delectus quae, id, amet architecto illo ea soluta.</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row  text-center p-4">
+              <div class="col-md-12 container">
+                <h1>Nos professionnels sont disponibles 24h/24 à votre service</h1>
+                <p>Consulter les détails de chacun de nos professionnels, contactes les et recevez un dévis pour votre
+                  prestation</p>
+                  <a href="" class="secondaryBtn text-center">Demander un devis gratuitement</a>
+              </div>
+              <div class="col-md-6">
+                <input class="form-control" placehoder="choisir une categorie" type="text" id="search">
+
+              </div>
+            </div>
+          </div>
+  
+    </header>
+    <!-- end header -->
+    <!-- section about -->
+    <section id="about">
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="icon">
+                        <img src="./assets/img/convenient.png" alt="">
+                        <span class="title">Simple</span>
+                    </div>
+                    <div class="desc">
+                        <p>Trouver votre prestataire en quelques clique!</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon">
+                        <img src="./assets/img/clock.png" alt="">
+                        <span class="title">Rapide</span>
+                    </div>
+                    <div class="desc">
+                        <p>Trouver votre prestataire en quelques clique!</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon">
+                        <img src="./assets/img/finger-snap.png" alt="">
+                        <span class="title">Efficace</span>
+                        
+                    </div>
+                    <div class="desc">
+                        <p>Trouver votre prestataire en quelques clique!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about section -->
+    <!-- section categories -->
+    <section id="categorie">
+        <div class="container mt-5">
+           <h5>De quoi avez-vous besoin ?</h5>
+            <div class="row">
+                <div class="col"> 
+                    <div class="card" >
+                    <img src="./assets/img/chauffeur professionnel.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="card-text">Service de</span>
+                        <h6>Conduite </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col"> 
+                    <div class="card" >
+                    <img src="./assets/img/plombier.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="card-text">Service de</span>
+                        <h6>Plombierie</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col"> 
+                    <div class="card" >
+                    <img src="./assets/img/nettoyage.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="card-text">Service de</span>
+                        <h6>Nettoyage</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col"> 
+                    <div class="card" >
+                    <img src="./assets/img/livreur.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="card-text">Service de</span>
+                        <h6>Coursier</h6>
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- end section categories -->
+    <!-- section sidebar -->
+    <section id="sidebar" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <h5><span>Nos principaux métiers</span> <span class="m-5">&nbsp;&nbsp;Services réalisés</span></h5>
+                <div class="col-md-3 px-0">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="sidebar-ul">
+                        
+                        </ul>  
+                        <div class="mt-5 pb-3 text-dark">
+                            <h4>Exercez votre actvité en portage salarial</h4>
+                            <p class="text-justify">
+                                Profitez de la liberté du freelance et bénéficiez des avantages du salarié grâce au portage salarial.
+                            </p>
+                        </div>
+                        <div class="pb-3 text-dark">
+                            <h4>Trouver un prestataire rapidement</h4>
+                            <p class="text-justify">
+                                Choisissez votre prestataire parmis les nombreux prestataire disponibles pour la réalisation de votre service.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- sidebar content -->
+                   <div class="col-md-9" id="sidebarContent">
+                    <div class="row mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                
+                                <h5 class="card-title">Bésoin d'un éléctricien pour partenariat</h5>
+                                <h6 class="card-subtitle mb-2 text-muted"><i class="fa-solid fa-tags"></i> Electricien</h6>
+                                <p class="card-text">
+                                Bonjour, Nous recherchons un éléctricien qui va intégrer notre equipe pour une durée de 2 semaines.
+                                Votre profil correspond à notre attente ,j'espère qu'on pourra collaborer.cordialement.
+                                </p>
+                                <p class="postedBy">
+                                <span><img class="avatar" src="./assets/img/nounou.jpg" alt="" srcset=""></span>  
+                                    <a href="#" class="card-link">Il y'a 1 semaine</a> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                
+                                <h5 class="card-title">Bésoin d'un éléctricien pour partenariat</h5>
+                                <h6 class="card-subtitle mb-2 text-muted"><i class="fa-solid fa-tags"></i> Electricien</h6>
+                                <p class="card-text">
+                                Bonjour, Nous recherchons un éléctricien qui va intégrer notre equipe pour une durée de 2 semaines.
+                                Votre profil correspond à notre attente ,j'espère qu'on pourra collaborer.cordialement.
+                                </p>
+                                <p class="postedBy">
+                                <span><img class="avatar" src="./assets/img/nounou.jpg" alt="" srcset=""></span>  
+                                    <a href="#" class="card-link">Il y'a 1 semaine</a> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                
+                                <h5 class="card-title">Bésoin d'un éléctricien pour partenariat</h5>
+                                <h6 class="card-subtitle mb-2 text-muted"><i class="fa-solid fa-tags"></i> Electricien</h6>
+                                <p class="card-text">
+                                Bonjour, Nous recherchons un éléctricien qui va intégrer notre equipe pour une durée de 2 semaines.
+                                Votre profil correspond à notre attente ,j'espère qu'on pourra collaborer.cordialement.
+                                </p>
+                                <p class="postedBy">
+                                <span><img class="avatar" src="./assets/img/nounou.jpg" alt="" srcset=""></span>  
+                                    <a href="#" class="card-link">Il y'a 1 semaine</a> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                
+                                <h5 class="card-title">Bésoin d'un éléctricien pour partenariat</h5>
+                                <h6 class="card-subtitle mb-2 text-muted"><i class="fa-solid fa-tags"></i> Electricien</h6>
+                                <p class="card-text">
+                                Bonjour, Nous recherchons un éléctricien qui va intégrer notre equipe pour une durée de 2 semaines.
+                                Votre profil correspond à notre attente ,j'espère qu'on pourra collaborer.cordialement.
+                                </p>
+                                <p class="postedBy">
+                                <span><img class="avatar" src="./assets/img/nounou.jpg" alt="" srcset=""></span>  
+                                    <a href="#" class="card-link">Il y'a 1 semaine</a> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                
+                    
+                    
+                    </div>
+                <!-- end sidebar content -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end sidebar -->
+    <section id="ads" class="container-fluid bg-primaire mt-5">
+        <div class="row text-center p-4">
+            <div class="col-md-12 mb-3 mt-3 container">
+                <h2 class="text-white mb-5">Sur EasyService, trouver le prestataire idéal pour vos bésoins</h2>
+                <a href="" class="whiteBtn text-center btn-block">&nbsp;&nbsp;&nbsp;Trouver un prestataire&nbsp;&nbsp;&nbsp;</a>
+            </div>
+          </div>
+    </section>
+
+    <section id="howToWork"class="bg-white">
+        <br><br>
+        <div class="container mt-3">
+            <div class="row text-center p-4 mb-3">
+                <h6>Comment ça marche</h6>
+                <h3>Trouver votre prestataire en moins de 2 minutes</h3>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                    <div><span>1</span></div>
+                    <h4>Selectionnez une categorie</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae corporis, quasi blanditiis voluptatibus aperiam et velit eius? Quod distinctio et quos, vitae repudiandae placeat, obcaecati rerum doloribus, aspernatur adipisci tempora!</p>
+                </div>
+                <div class="col-md-4">
+                    <div><span>2</span></div>
+                    <h4>Choisissez Votre prestataire</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae corporis, quasi blanditiis voluptatibus aperiam et velit eius? Quod distinctio et quos, vitae repudiandae placeat, obcaecati rerum doloribus, aspernatur adipisci tempora!</p>
+                </div>
+                <div class="col-md-4">
+                    <div><span>3</span></div>
+                    <h4>Demander votre service</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae corporis, quasi blanditiis voluptatibus aperiam et velit eius? Quod distinctio et quos, vitae repudiandae placeat, obcaecati rerum doloribus, aspernatur adipisci tempora!</p>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section id="avantage"class="bg-white">
+        <br><br><br>
+        <div class="container">
+            <div class="row text-center p-4 mb-3">
+                <h6>Avantages</h6>
+                <h3>Les avantage de EasyService pour votre differentes prestations</h3>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="./assets/img/icon-time.webp" alt="">
+                    </div>
+                    <h4 class="text-center">Rapidité</h4>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae corporis, quasi blanditiis voluptatibus aperiam et velit eius? Quod distinctio et quos, vitae repudiandae placeat, obcaecati rerum doloribus, aspernatur adipisci tempora!</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="./assets/img/icon-tarifs.webp" alt="" srcset="">
+                    </div>
+                    <h4 class="text-center">Tarifs attractifs</h4>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae corporis, quasi blanditiis voluptatibus aperiam et velit eius? Quod distinctio et quos, vitae repudiandae placeat, obcaecati rerum doloribus, aspernatur adipisci tempora!</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="./assets/img/icon-expertise.webp" alt="">
+                    </div>
+                    <h4 class="text-center">Expertise</h4>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae corporis, quasi blanditiis voluptatibus aperiam et velit eius? Quod distinctio et quos, vitae repudiandae placeat, obcaecati rerum doloribus, aspernatur adipisci tempora!</p>
+                </div>
+              </div>
+        </div>
+    </section>
+    <!-- section footer -->
+    <!-- <div id="modal">
+        <div class="follow-modal-container-inner">			
+            <div class="textwidget"><div class="right-modal">
+            <p class="titre-modal">Vous avez besoin d’un développeur mobile&nbsp;?</p>
+            <p class="button-modal">
+                <a href="https://www.codeur.com/developpeur/mobile/?source=blog-modal#open-fast"><span class="mks_button mks_button_small rounded" style="color: #ffffff; background-color: #111;">Publier une annonce <span class="hidden-sm-down">gratuite</span></span></a></p>
+            </div>
+            <div class="left-modal"><img width="844" height="544" decoding="async" class="freelance-image entered lazyloaded" src="/blog/wp-content/uploads/2022/08/img-freelance-23952f00c493ef3ebcc7d515b0313d05a905fdfe678bcf5fa50dea8d1b9a5009-1.webp" data-lazy-src="/blog/wp-content/uploads/2022/08/img-freelance-23952f00c493ef3ebcc7d515b0313d05a905fdfe678bcf5fa50dea8d1b9a5009-1.webp" data-ll-status="loaded"><noscript><img width="844" height="544" decoding="async" class="freelance-image" src="/blog/wp-content/uploads/2022/08/img-freelance-23952f00c493ef3ebcc7d515b0313d05a905fdfe678bcf5fa50dea8d1b9a5009-1.webp" /></noscript></div>
+        </div>
+        <a class="close_modal activeclose" onclick="FermetureFollowModale()" id="close-follow-modale">x</a></div>
+    </div> -->
+    
+    <footer>
+        <p class="text-center">EasyService Copiright 2023</p>
+    </footer>
+    <!-- end footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./assets/js/loadbd.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

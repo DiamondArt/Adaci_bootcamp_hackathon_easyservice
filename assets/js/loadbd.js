@@ -1,6 +1,6 @@
 //var dbSource="bd.json";
 
-let categories = {
+var dataBD = {
     "categories": [
         {
             "id": 1,
@@ -24,14 +24,14 @@ let categories = {
         },
         {
             "id": 6,
-            "libelle": "Femme de menage"
+            "libelle": "Domestique"
         },
         {
             "id": 7,
             "libelle": "Jardinier"
         }
     ],
-    "proffessionnels": [
+    "professionnels": [
         {
             "nom": "Kacou",
             "prenom": "Jean-Phillipe",
@@ -234,3 +234,6 @@ let categories = {
         }
     ]
 }
+
+var categories = dataBD.categories;
+var professionnels = dataBD.professionnels;

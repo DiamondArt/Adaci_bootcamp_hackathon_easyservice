@@ -30,25 +30,41 @@ for (const key in categories) {
     linkTag.appendChild(iconTag);
     linkTag.appendChild(spanTag);
     liTag.appendChild(linkTag);
-
     sidebarUl.appendChild(liTag);
 }
 
+let modal = new bootstrap.Modal(document.getElementById('exampleModal'),{keyboard:false});
+window.addEventListener("scroll", function(event) {
+    var top = this.scrollY;
+    if(top > 2007) {
+        console.log("top= ",top);
+        const myModalEl = document.getElementById('exampleModal');
+        // modal.show();
+        // myModalEl.addEventListener('shown.bs.modal', event => {
+        // // do something...
+        // });
+    } 
+    console.log(top);
+}, false);
+
+
+
+
 
 // PROFESSIONAL PAGE LIST
-let listeProCategoriesList = document.querySelector(".liste-pro-categoriesList");
+// let listeProCategoriesList = document.querySelector(".liste-pro-categoriesList");
 
-/** Ajout des catégories */
-for (const key in categories) {
-    let div = document.createElement("div");
-    div.classList.add("liste-pro-categorie-item");
-    let span = document.createElement("span");
-    span.classList.add("material-symbols-outlined");
-    span.innerHTML = iconsCategories[key];
-    let textNode = document.createTextNode(categories[key].libelle);
+// /** Ajout des catégories */
+// for (const key in categories) {
+//     let div = document.createElement("div");
+//     div.classList.add("liste-pro-categorie-item");
+//     let span = document.createElement("span");
+//     span.classList.add("material-symbols-outlined");
+//     span.innerHTML = iconsCategories[key];
+//     let textNode = document.createTextNode(categories[key].libelle);
 
-    div.appendChild(span);
-    div.appendChild(textNode);
-    listeProCategoriesList.appendChild(div);
-}
+//     div.appendChild(span);
+//     div.appendChild(textNode);
+//     listeProCategoriesList.appendChild(div);
+// }
 // PROFESSIONAL DETAIL

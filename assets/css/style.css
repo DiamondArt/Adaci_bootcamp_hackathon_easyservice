@@ -9,9 +9,9 @@
 /* START ACCUEIL AUTHENTIFICATION PAGE*/
 .gradient-custom-auth {
 
-    background-image: url(../IMG/femme\ de\ menage.jpg);
+   /* background-image: url(../IMG/femme\ de\ menage.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
     }
     
     @media (min-width: 768px) {

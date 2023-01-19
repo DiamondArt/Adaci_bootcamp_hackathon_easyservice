@@ -1,10 +1,22 @@
 /* ******************************
 *               EASYSERVICE
 **********************************/
-
+:root {
+    --text-color-liste-pro: #535556;
+    --text-color-background: #F4F6F8;
+}
 
 /* HOME PAGE */
 /* LIST PROFESSIONAL PAGE */
+.liste-pro-desc {
+    background-color: var(--text-color-background);
+    color: var(--text-color-liste-pro);
+}
+
+.liste-pro-desc h1 {
+    font-size: 25px;
+}
+
 /* DETAIL PROFESSIONAL PAGE */
 /* SIGNIN PAGE */
 /* SIGNUP PAGE */

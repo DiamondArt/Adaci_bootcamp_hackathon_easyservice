@@ -24,7 +24,7 @@ var dataBD = {
         },
         {
             "id": 6,
-            "libelle": "Femme de menage"
+            "libelle": "Domestique"
         },
         {
             "id": 7,

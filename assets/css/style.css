@@ -2,8 +2,43 @@
 *               EASYSERVICE
 **********************************/
 
+/* main color */
+:root{
+    --primaryColor: #246aeb;
+    --secondaryColor:#01ce68;
+    --thirdColor:  #f94e4e;
+    --fourColor:   #4c0d99;
+    --fiveColor:  #1a4aac;
+}
 
 /* HOME PAGE */
+
+header{
+  border-top: 2px solid var(--primaryColor);
+}
+.secondaryBtn{
+    border-radius: 100px;
+    color: white;
+    padding: 12px;
+    background: var(--secondaryColor);
+    text-decoration: none;
+}
+.primaryBtn{
+    border-radius: 100px;
+    color: white;
+    padding: 12px;
+    background: var(--primaryColor);
+    text-decoration: none;
+}
+
+.bg-pro div img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+
 /* LIST PROFESSIONAL PAGE */
 /* DETAIL PROFESSIONAL PAGE */
 /* SIGNIN PAGE */

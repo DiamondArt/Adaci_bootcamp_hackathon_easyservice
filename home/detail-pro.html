@@ -18,29 +18,28 @@
 <body>
   <!-- header -->
   <header class="bg-body-tertiary">
-    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar  navbar-expand-lg bg-body-tertiary mt-3">
       <div class="container">
-        <a class="navbar-brand" href="#">EasyService</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/img/logo2.png" alt="" width="130">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">A propos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Connexion</a>
+              <a href="../authentification/login.html" class="nav-link">Se connecter</a>
             </li>
           </ul>
+        
           <div class="d-flex">
-            <a class="primaryBtn me-2">&nbsp;&nbsp;&nbsp;Nous rejoindre&nbsp;&nbsp;&nbsp;</a>
-            <a class="secondaryBtn">Demander un devis</a>
+              <a href="../authentification/signup.html" class="primaryBtn me-2">&nbsp;&nbsp;&nbsp;Nous rejoindre&nbsp;&nbsp;&nbsp;</a>
+              <a href="#" class="secondaryBtn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Demander un devis</a>
           </div>
         </div>
       </div>
-    </nav>
+  </nav>
 
   </header>
   <!-- end header -->
@@ -112,7 +111,7 @@
       </div>
     </section>
   </div>
-
+<br><br>
   <!-- Modal formulaire devis -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
@@ -153,8 +152,6 @@
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>

@@ -98,6 +98,15 @@
     padding: .75rem 1rem;
   }
 
+  /* titre */
+
+  .situation-actuelle{
+    text-transform: uppercase;
+    color: var(--fiveColor);
+    font-size: 20px;
+    font-weight: bold;
+  }
+
   /* contenu */
 
   .titre-Information{
@@ -114,61 +123,50 @@
     font-size: 15px;
   }
 
-  .situation-actuelle{
-    text-transform: capitalize;
+
+  /* Annonce */
+
+  .card-title-annonce{
+    color :var(--primaryColor);
     font-weight: bold;
-    font-size: 20px;
-    color: var(--fiveColor)
   }
 
-  .demande{
-    background-color: var(--primaryColor);
+  .card-title-historique{
+    color :var(--thirdColor);
+    font-weight: bold;
   }
 
-  .demande-titre{
-    color: var(--text-color-liste-pro);
+  .card-title-accept{
+    color :var(--secondaryColor);
+    font-weight: bold;
+  }
+
+  /**/
+
+  .cadre-infos{
+    background-color: var(--primaryColor)
+  }
+
+  .cadre-infos div strong{
     text-align: center;
-    text-transform: capitalize;
-    font-size: 20px;
     color: var(--text-color-background);
+    text-transform: uppercase;
+    font-size: 18px;
   }
 
-  .demande-nombre{
-    font-size: 40px;
+
+  .cadre-infos div h3{
     text-align: center;
-    margin: 20px;
     color: var(--text-color-background);
+    text-transform: uppercase;
+    font-size: 30px;
   }
 
-  .info-demande{
+  .cadre-infos div a{
     text-align: center;
-    text-transform: capitalize;
-    color: var(--text-color-background);
-    margin-top: 40px;
-    font-size:medium ;
-   font-weight: bold;
+    color: var(--primaryColor);
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
   }
-
-  .prestation-titre{
-    color: var(--text-color-liste-pro);
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 20px;
-    color: var(--secondaryColor);
-  }
-
-  .prestation-nombre{
-    font-size: 40px;
-    text-align: center;
-    margin: 20px;
-    color: var(--fiveColor);
-  }
-
-  .prestation-historique{
-    text-align: center;
-    text-transform: capitalize;
-    color: var(--fourColor);
-    margin-top: 40px;
-    font-size:medium ;
-   font-weight: bold;
-  }
+  

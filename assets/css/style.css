@@ -66,7 +66,8 @@ body {
     background: #f4f6f8;
     font-family: Georgia;
 }
-.bg-primaire{
+
+.bg-primaire {
     background: var(--fiveColor);
 }
 
@@ -168,7 +169,8 @@ box-shadow: none; }
     background: var(--primaryColor);
     text-decoration: none;
 }
-.whiteBtn{
+
+.whiteBtn {
     border-radius: 100px;
     color: var(--primaryColor);
     padding: 12px;
@@ -299,7 +301,8 @@ i.material-symbols-outlined {
     border-right: 1px solid white;
     /* margin: 5px; */
 }
-#howToWork .col-md-4 div{
+
+#howToWork .col-md-4 div {
     background: var(--fiveColor);
     color: white;
     height: 40px;
@@ -307,15 +310,18 @@ i.material-symbols-outlined {
     text-align: center;
     margin-bottom: 5px;
 }
-#howToWork .col-md-4 h4{
+
+#howToWork .col-md-4 h4 {
     color: rgb(52, 51, 51);
     font-size: 20px;
     font-weight: 700;
 }
-#howToWork .col-md-4 p{
+
+#howToWork .col-md-4 p {
     color: gray
 }
-#avantage img{
+
+#avantage img {
     width: 50px;
 }
 #avantage p{
@@ -519,43 +525,75 @@ header {
 }
 
 /* DETAIL PROFESSIONAL PAGE */
-/*DEBUT  SIGNIN PAGE */
+.details-pro-desc {
+    color: var(--white-color);
+    height: 250px;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/876/437/102/blue-material-material-design-minimal-art-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
+.description-prestataire {
+    background-color: var(--white-color);
+    padding: 10px;
+    border: none;
+    position: absolute;
+    top: 235px;
+    width: 60%;
+}
+
+.star-checked {
+    color: orange;
+}
+
+.commande-prestataire {
+    background-color: var(--white-color);
+    padding: 10px;
+    border: none;
+    position: absolute;
+    top: 235px;
+    width: 20%;
+    text-align: center;
+}
+
+.commande-prestataire img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.commande-prestataire button {
+    border: none;
+}
+
+.show-card {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.hide-card{
+    opacity: 0;
+}
+
+@media screen and (max-width:768px) {
+
+
+    .description-prestataire {
+        position: unset;
+        width: 100%;
+    }
+
+    .commande-prestataire {
+        position: unset;
+        width: 100%;
+    }
+
+    .prestataire {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+/* SIGNIN PAGE */
 /* SIGNUP PAGE */
-
-
-/* START ACCUEIL AUTHENTIFICATION PAGE*/
-.gradient-custom-auth {
-
-     }
-     
-     @media (min-width: 768px) {
-     .gradient-form {
-     height: 100vh !important;
-     }
-     }
-     @media (min-width: 769px) {
-     .gradient-custom-2 {
-     border-top-right-radius: .3rem;
-     border-bottom-right-radius: .3rem;
-     }
-     }
-     .gradient-form-auth{
-       background-color: #eee;
-     }
- 
-     .error{
-       color: red;
-     }
- 
- 
-   .divForm{
-      width: 600px;
-      margin-left: 5%;
- 
- 
-     }
- 
- /* END ACCUEIL AUTHENTIFICATION PAGE */
- 
- /* SIGNUP PAGE */

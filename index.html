@@ -3,61 +3,63 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>EasyService</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
   <body>
+    <!-- loader -->
+        <div id="loader" class="">
+            <div>
+                <img class="center-img" src="./assets/img/logo2.png" alt="" srcset="">
+                <div class="center loadIcons "></div>
+            </div>
+        </div>
+    <!-- end loader -->
     <!-- header -->
     <header class="bg-body-tertiary">
-        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar  navbar-expand-lg bg-body-tertiary mt-3">
             <div class="container">
-              <a class="navbar-brand" href="#">EasyService</a>
+              <a class="navbar-brand" href="#">
+                <img src="./assets/img/logo2.png" alt="" width="130">
+              </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">A propos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link">Connexion</a>
+                    <a href="./authentification/signin.html" class="nav-link">Se connecter</a>
                   </li>
                 </ul>
+              
                 <div class="d-flex">
-                    <a  class="primaryBtn me-2">&nbsp;&nbsp;&nbsp;Nous rejoindre&nbsp;&nbsp;&nbsp;</a>
-                    <a  class="secondaryBtn">Demander un devis</a>
+                    <a href="./authentification/signup.html" class="primaryBtn me-2">&nbsp;&nbsp;&nbsp;Nous rejoindre&nbsp;&nbsp;&nbsp;</a>
+                    <a href="#" class="secondaryBtn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Demander un devis</a>
                 </div>
               </div>
             </div>
         </nav>
-        <div class="container-fluid">
-            <div class="row mt-3">
-                <div class="col-md-2 bg-pro" >
+        <div class="py-5 bg-provider">
+            <div class="container">
+                <div class="row text-center mt-3">
+                    <div class="col-md-2 bg-pro" >
+                    </div>
+                    <div class="col-md-8 mt-5">
+                        <h2 class="text-center"> Trouver facilement le meilleur prestataire !</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia optio unde velit recusandae, corrupti consequuntur deleniti nihil quod mollitia cupiditate sed quam delectus quae, id, amet architecto illo ea soluta.</p>
+                    </div>
+                    <div class="col-md-2"></div>
                 </div>
-                <div class="col-md-8 mt-5">
-                    <h2 class="text-center"> Trouver facilement le meilleur prestataire !</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia optio unde velit recusandae, corrupti consequuntur deleniti nihil quod mollitia cupiditate sed quam delectus quae, id, amet architecto illo ea soluta.</p>
+                <div class="row  text-center p-4">
+                  <div class="col-md-12">
+                    <button class="btn bg-second fw-semibold rounded-pill btn-lg mt-2 px-8 px-sm-12 shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Demander un devis gratuitement</button>
                 </div>
-                <div class="col-md-2"></div>
+                </div>
             </div>
-            <div class="row  text-center p-4">
-              <div class="col-md-12 container">
-                <h1>Nos professionnels sont disponibles 24h/24 à votre service</h1>
-                <p>Consulter les détails de chacun de nos professionnels, contactes les et recevez un dévis pour votre
-                  prestation</p>
-                  <a href="" class="secondaryBtn text-center">Demander un devis gratuitement</a>
-              </div>
-              <div class="col-md-6">
-                <input class="form-control" placehoder="choisir une categorie" type="text" id="search">
-
-              </div>
-            </div>
-          </div>
-  
+        </div>
     </header>
     <!-- end header -->
     <!-- section about -->
@@ -99,10 +101,10 @@
     <!-- section categories -->
     <section id="categorie">
         <div class="container mt-5">
-           <h5>De quoi avez-vous besoin ?</h5>
+           <h5 class="mt-3 mb-3">De quoi avez-vous besoin ?</h5>
             <div class="row">
-                <div class="col"> 
-                    <div class="card" >
+                <div class="col-md-3"> 
+                    <div class="card bg-card-1" >
                     <img src="./assets/img/chauffeur professionnel.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <span class="card-text">Service de</span>
@@ -110,8 +112,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="col"> 
-                    <div class="card" >
+                <div class="col-md-3"> 
+                    <div class="card bg-card-2" >
                     <img src="./assets/img/plombier.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <span class="card-text">Service de</span>
@@ -119,8 +121,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="col"> 
-                    <div class="card" >
+                <div class="col-md-3"> 
+                    <div class="card bg-card-3" >
                     <img src="./assets/img/nettoyage.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <span class="card-text">Service de</span>
@@ -128,8 +130,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="col"> 
-                    <div class="card" >
+                <div class="col-md-3"> 
+                    <div class="card bg-card-4" >
                     <img src="./assets/img/livreur.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <span class="card-text">Service de</span>
@@ -146,19 +148,21 @@
     <section id="sidebar" class="mt-5">
         <div class="container">
             <div class="row">
-                <h5><span>Nos principaux métiers</span> <span class="m-5">&nbsp;&nbsp;Services réalisés</span></h5>
-                <div class="col-md-3 px-0">
+                <h5 class="d-none d-sm-block"><span>Nos principaux métiers</span><span class="m-5">Services réalisés</span></h5>
+                <h5 class="title-show d-none"><span>Nos principaux métiers</span></h5>
+                <div class="col-md-3 px-0 ">
                     <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
                         <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="sidebar-ul">
                         
                         </ul>  
-                        <div class="mt-5 pb-3 text-dark">
+
+                        <div class="crd mt-5 pb-3 text-dark d-none d-sm-block">
                             <h4>Exercez votre actvité en portage salarial</h4>
                             <p class="text-justify">
                                 Profitez de la liberté du freelance et bénéficiez des avantages du salarié grâce au portage salarial.
                             </p>
                         </div>
-                        <div class="pb-3 text-dark">
+                        <div class="crd pb-3 text-dark d-none d-sm-block">
                             <h4>Trouver un prestataire rapidement</h4>
                             <p class="text-justify">
                                 Choisissez votre prestataire parmis les nombreux prestataire disponibles pour la réalisation de votre service.
@@ -167,13 +171,17 @@
                     </div>
                 </div>
                 <!-- sidebar content -->
+                <h5 class="title-show d-none mt-5 mb-3"><span>Services réalisés</span></h5>
+
                    <div class="col-md-9" id="sidebarContent">
+                    <!-- <h5 class="d-block d-sm-none"><span class="m-5 ">Services réalisés</span></h5> -->
+
                     <div class="row mb-3">
                         <div class="card">
                             <div class="card-body">
                                 
                                 <h5 class="card-title">Bésoin d'un éléctricien pour partenariat</h5>
-                                <h6 class="card-subtitle mb-2 text-muted"><i class="fa-solid fa-tags"></i> Electricien</h6>
+                                <h6 class="card-subtitle mb-2 "><i class="fa-solid fa-tags"></i> Electricien</h6>
                                 <p class="card-text">
                                 Bonjour, Nous recherchons un éléctricien qui va intégrer notre equipe pour une durée de 2 semaines.
                                 Votre profil correspond à notre attente ,j'espère qu'on pourra collaborer.cordialement.
@@ -190,7 +198,7 @@
                             <div class="card-body">
                                 
                                 <h5 class="card-title">Bésoin d'un éléctricien pour partenariat</h5>
-                                <h6 class="card-subtitle mb-2 text-muted"><i class="fa-solid fa-tags"></i> Electricien</h6>
+                                <h6 class="card-subtitle mb-2 "><i class="fa-solid fa-tags"></i> Electricien</h6>
                                 <p class="card-text">
                                 Bonjour, Nous recherchons un éléctricien qui va intégrer notre equipe pour une durée de 2 semaines.
                                 Votre profil correspond à notre attente ,j'espère qu'on pourra collaborer.cordialement.
@@ -207,7 +215,7 @@
                             <div class="card-body">
                                 
                                 <h5 class="card-title">Bésoin d'un éléctricien pour partenariat</h5>
-                                <h6 class="card-subtitle mb-2 text-muted"><i class="fa-solid fa-tags"></i> Electricien</h6>
+                                <h6 class="card-subtitle mb-2 "><i class="fa-solid fa-tags"></i> Electricien</h6>
                                 <p class="card-text">
                                 Bonjour, Nous recherchons un éléctricien qui va intégrer notre equipe pour une durée de 2 semaines.
                                 Votre profil correspond à notre attente ,j'espère qu'on pourra collaborer.cordialement.
@@ -224,7 +232,7 @@
                             <div class="card-body">
                                 
                                 <h5 class="card-title">Bésoin d'un éléctricien pour partenariat</h5>
-                                <h6 class="card-subtitle mb-2 text-muted"><i class="fa-solid fa-tags"></i> Electricien</h6>
+                                <h6 class="card-subtitle mb-2 "><i class="fa-solid fa-tags"></i> Electricien</h6>
                                 <p class="card-text">
                                 Bonjour, Nous recherchons un éléctricien qui va intégrer notre equipe pour une durée de 2 semaines.
                                 Votre profil correspond à notre attente ,j'espère qu'on pourra collaborer.cordialement.
@@ -248,11 +256,11 @@
         </div>
     </section>
     <!-- end sidebar -->
-    <section id="ads" class="container-fluid bg-primaire mt-5">
+    <section id="ads" class="container-fluid bg-primaire mt-5 py-5">
         <div class="row text-center p-4">
             <div class="col-md-12 mb-3 mt-3 container">
-                <h2 class="text-white mb-5">Sur EasyService, trouver le prestataire idéal pour vos bésoins</h2>
-                <a href="" class="whiteBtn text-center btn-block">&nbsp;&nbsp;&nbsp;Trouver un prestataire&nbsp;&nbsp;&nbsp;</a>
+                <h1 class="text-white mb-5">Sur EasyService, trouver le prestataire idéal pour vos bésoins</h1>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" class="whiteBtn text-center fw-semibold rounded-pill btn-lg mt-2 px-8 px-sm-12 shadow">&nbsp;&nbsp;&nbsp;Trouver un prestataire&nbsp;&nbsp;&nbsp;</a>
             </div>
           </div>
     </section>
@@ -315,24 +323,64 @@
               </div>
         </div>
     </section>
-    <!-- section footer -->
-    <!-- <div id="modal">
+    <!-- subscription modal -->
+    <div class="follow-modal fixed-800" id="follow-modal">
+        <div class="follow-modal-container">
         <div class="follow-modal-container-inner">			
-            <div class="textwidget"><div class="right-modal">
-            <p class="titre-modal">Vous avez besoin d’un développeur mobile&nbsp;?</p>
-            <p class="button-modal">
-                <a href="https://www.codeur.com/developpeur/mobile/?source=blog-modal#open-fast"><span class="mks_button mks_button_small rounded" style="color: #ffffff; background-color: #111;">Publier une annonce <span class="hidden-sm-down">gratuite</span></span></a></p>
+            <div class="textwidget">
+                <div class="right-modal">
+                    <p class="titre-modal">Besoin d'un prestataire &nbsp;?</p>
+                    <p class="button-modal mt-2">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" style="padding: 3px; text-decoration: none;">
+                    <span class="py-3 rounded" style="color: #ffffff; background-color: #111; padding: 3px;">
+                        &nbsp;&nbsp;Trouvez-le en 2 click<span class="hidden-sm-down">&nbsp;&nbsp;&nbsp;</span></span></a></p>
+                </div>
+                <div class="left-modal">
+                    <img width="844" height="644"  class="freelance-image   lazyloaded" src="./assets/img/blackwoman.png"/>
+                </div>
             </div>
-            <div class="left-modal"><img width="844" height="544" decoding="async" class="freelance-image entered lazyloaded" src="/blog/wp-content/uploads/2022/08/img-freelance-23952f00c493ef3ebcc7d515b0313d05a905fdfe678bcf5fa50dea8d1b9a5009-1.webp" data-lazy-src="/blog/wp-content/uploads/2022/08/img-freelance-23952f00c493ef3ebcc7d515b0313d05a905fdfe678bcf5fa50dea8d1b9a5009-1.webp" data-ll-status="loaded"><noscript><img width="844" height="544" decoding="async" class="freelance-image" src="/blog/wp-content/uploads/2022/08/img-freelance-23952f00c493ef3ebcc7d515b0313d05a905fdfe678bcf5fa50dea8d1b9a5009-1.webp" /></noscript></div>
+            <a class="close_modal activeclose" onclick="CloseFollowModale()" id="close-follow-modale">
+                <div class="closex"></div>
+            </a>
         </div>
-        <a class="close_modal activeclose" onclick="FermetureFollowModale()" id="close-follow-modale">x</a></div>
-    </div> -->
-    
-    <footer>
-        <p class="text-center">EasyService Copiright 2023</p>
-    </footer>
-    <!-- end footer -->
-
+        </div>
+    </div>
+    <!-- end subscription modal -->
+  <!-- search modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Séléctionnez une categorie</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="#" id="searchForm" class="subscribe-form">
+                <div class="form-group d-flex">
+                    <select class="form-control rounded-left" name="" id="searchModal">
+                        <option value="">Choisir un secteur</option>
+                    </select>
+                  <input type="submit" value="Rechercher" class="form-control submit px-3 rounded-right">
+                </div>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end search bar -->
+ <!-- section footer -->
+ <footer class="py-3">
+    <div class="container-fluid">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 ">Accueil</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 ">Connexion</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 ">Inscription</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 ">Contact</a></li>
+        </ul>
+        <p class="text-center text-white">© 2023 EasyService</p>
+    </div>
+ </footer>
+<!-- end footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="./assets/js/loadbd.js"></script>
     <script src="./assets/js/main.js"></script>

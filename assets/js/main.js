@@ -3,10 +3,10 @@
  |-----------------------------------------------------------------
  |                        PROJET: EASYSERVICE
  | @author: 
- | Nguessan Marina <>
- | Kouadio Ange Melissa
- | Etoumi <>
- | Magara
+ | Nguessan Marina <marinanguessan23@gmail.com>
+ | Kouadio Ange Melissa <angemelisk@gmail.com>
+ | Etoumi Aristide <aetoumi@gmail.com>
+ | Magara Etchien <magaretchien@gmail.com>
  | 
  * ********************************************************************/ 
 
@@ -21,29 +21,32 @@ let iconsCategories = [
 ];
 let sidebarUl = document.getElementById("sidebar-ul");
 let searchSelect = document.getElementById("searchModal");
+let searchForm = document.getElementById("searchForm");
+const myModalEl = document.getElementById('follow-modal');
 let  closeModal;
+myModalEl.style ="visibility:hidden;-moz-transition: opacity 500ms linear, visibility 0s linear 500ms;-o-transition: opacity 500ms linear, visibility 0s linear 500ms;-webkit-transition: opacity 500ms linear, visibility 0s linear;-webkit-transition-delay: 0s, 500ms;transition: opacity 500ms linear, visibility 0s linear 500ms";
 
-/***************************
- * 
- * 
- * */ 
-// HOME PAGE
-
-createSideBar();
+/******************************************
+ *  window ready state
+ * ****************************************/ 
 document.onreadystatechange = function() {
 	if (document.readyState !== "complete") {
 		document.querySelector("body").style.visibility = "hidden";
 		document.querySelector("#loader").style.visibility = "visible";
 	} else {
+        createSideBar();
         setTimeout(function(){
             document.querySelector("#loader").style.display = "none";
 		    document.querySelector("body").style.visibility = "visible";
         },2000);
-		
 	}
 };
 
-
+/***********************************************************
+ * @function createSideBar()
+ * @description: add sidebar content with categories
+ * @returns: void
+ * *********************************************************/ 
 function createSideBar() {
     for (const key in categories) {
         let liTag = document.createElement('li');
@@ -74,7 +77,9 @@ function createSideBar() {
         searchSelect.appendChild(option);
     }
 }
-let searchForm = document.getElementById("searchForm");
+/***********************************************************
+ * @description: search professionnal by category 
+ * *********************************************************/ 
 searchForm.addEventListener('submit',function(event){
     event.preventDefault();
     let valueSearch = searchSelect.value;
@@ -83,9 +88,10 @@ searchForm.addEventListener('submit',function(event){
     window.location.replace("/home/list-professional.html");
 
 });
-const myModalEl = document.getElementById('follow-modal');
-myModalEl.style ="visibility:hidden;-moz-transition: opacity 500ms linear, visibility 0s linear 500ms;-o-transition: opacity 500ms linear, visibility 0s linear 500ms;-webkit-transition: opacity 500ms linear, visibility 0s linear;-webkit-transition-delay: 0s, 500ms;transition: opacity 500ms linear, visibility 0s linear 500ms";
 
+/***********************************************************
+ * @description: show modal if scroll 
+ * *********************************************************/ 
 window.addEventListener("scroll", function(event) {
     var top = this.scrollY;
     if(!closeModal)
@@ -93,16 +99,17 @@ window.addEventListener("scroll", function(event) {
         if(top > 2007) {
             console.log("top= ",top);
             myModalEl.style = "visibility:visible"
-            // modal.show();
-            // myModalEl.addEventListener('shown.bs.modal', event => {
-            // // do something...
-            // });
         }else{
             myModalEl.style = "visibility:hidden;-moz-transition: opacity 500ms linear, visibility 0s linear;-o-transition: opacity 500ms linear, visibility 0s linear;-webkit-transition: opacity 500ms linear, visibility 0s linear;transition: opacity 500ms linear, visibility 0s linear;";
         }
     }
 }, false);
 
+/***********************************************************
+ * @function: CloseFollowModale()
+ * @description: close modal
+ * @returns: void
+ * *********************************************************/ 
 function CloseFollowModale(){
     closeModal = true;
     myModalEl.style = "visibility:hidden;-moz-transition: opacity 500ms linear, visibility 0s linear;-o-transition: opacity 500ms linear, visibility 0s linear;-webkit-transition: opacity 500ms linear, visibility 0s linear;transition: opacity 500ms linear, visibility 0s linear;";

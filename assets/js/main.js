@@ -10,7 +10,6 @@
  | 
  * ********************************************************************/
 
-alert("hello")
 
 let iconsCategories = [
     'baby_changing_station',

@@ -10,6 +10,8 @@
  | 
  * ********************************************************************/
 
+alert("hello")
+
 let iconsCategories = [
     'baby_changing_station',
     'directions_car',
